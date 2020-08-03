@@ -1,0 +1,226 @@
+.touch_effect {
+    position: absolute;
+    z-index: 1000;
+}
+
+.love_heart {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+
+.loveBackground {
+    position: absolute;
+}
+
+.lovewords_container {
+    margin: auto;
+    width: 280rpx;
+    height: 365rpx;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 101;
+}
+
+.words_super_parent_container {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.words_parent_container {
+    margin: auto;
+    width: 670rpx;
+    height: 625rpx;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.words_container {
+    font-family: "sans-serif";
+    width: 500rpx;
+    font-size: 14px;
+    color: #666;
+    position: absolute;
+    top: 160rpx;
+    left: 90rpx;
+}
+
+.words {
+    opacity: 1;
+    font-size: 18px;
+}
+
+.loveTime {
+    text-align: right;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+.digit {
+    font-family: "digit";
+    font-size: 28px;
+    display: inline;
+}
+
+.lovehead {
+    left: 202rpx;
+    background-color: transparent;
+}
+
+.animate-rotate {
+    animation-name: rotate;
+    animation-duration: 6000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 2000ms;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.bg_music {
+    position: fixed;
+    left: 20rpx;
+    top: 0px;
+    width: 85rpx;
+    z-index: 99;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.musicImg {
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.music_icon {
+    animation: musicRotate 3s linear infinite;
+}
+
+.music_play {
+    width: 28rpx;
+    height: 60rpx;
+    margin-left: -10rpx;
+    transform-origin: top;
+    transform: rotate(20deg);
+}
+
+.playImg {
+    animation: musicStop 1s linear forwards;
+}
+
+.pauseImg {
+    animation: musicStart 1s linear forwards;
+}
+
+@keyframes musicRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes musicRotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes musicStop {
+    from {
+        transform: rotate(20deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes musicStop {
+    from {
+        -webkit-transform: rotate(20deg);
+    }
+
+    to {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@keyframes musicStart {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(20deg);
+    }
+}
+
+@-webkit-keyframes musicStart {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(20deg);
+    }
+}
+
+.love_and_kiss {
+    height: 276rpx;
+    width: 256rpx;
+    position: fixed;
+    bottom: 110rpx;
+    z-index: 10;
+    right: 0;
+}
+
+.celebration_superclean {
+    width: 200rpx;
+    height: 160rpx;
+    position: fixed;
+    bottom: 0rpx;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}

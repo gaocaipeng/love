@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/love/index",
+    "pages/swiper/index",
+    "pages/like/index",
+    "pages/my/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "requiredBackgroundModes": ["audio"],
+  "usingComponents": {
+    "cu-custom":"/colorui/components/cu-custom"
+  },
+  "tabBar": {
+    "color": "#8C8C8C",
+    "selectedColor": "#D00E78",
+    "list": [{
+      "pagePath": "pages/love/index",
+      "text": "love",
+      "iconPath": "/images/tabbar/love.png",
+      "selectedIconPath": "/images/tabbar/love_selected.png"
+    }, {
+      "pagePath": "pages/swiper/index",
+      "text": "520",
+      "iconPath": "/images/tabbar/520.png",
+      "selectedIconPath": "/images/tabbar/520_selected.png"
+    }, {
+      "pagePath": "pages/like/index",
+      "text": "1314",
+      "iconPath": "/images/tabbar/1314.png",
+      "selectedIconPath": "/images/tabbar/1314_selected.png"
+    }, {
+      "pagePath": "pages/my/index",
+      "text": "3344",
+      "iconPath": "/images/tabbar/3344.png",
+      "selectedIconPath": "/images/tabbar/3344_selected.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json"
+}

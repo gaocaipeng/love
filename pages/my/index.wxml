@@ -1,0 +1,20 @@
+<cu-custom bgColor="bg-gradual-orange" isBack="{{false}}">
+    <view slot="content">我的</view>
+    <view class="action" slot="right">
+        <view class="cu-load load-icon {{isLoading?'loading':'over'}}"></view>
+    </view>
+</cu-custom>
+<view class="encourage">
+    <p class="encourage-top">简介</p>
+    <view class="encourage-title">
+        <p><span>创造背景：</span>学习了解云开发经历，这块是评论窗口，没时间审核维护就先关闭了</p>
+        <p><span>所用知识：</span>canvas+云开发</p>
+        <!-- <p>有喜欢这个小程序的可以联系我哟，这里是评论窗口我先关闭</p> -->
+    </view>
+    <view class="encourage-con">
+        <p>联系我</p>
+        <image bindtap="savePhoto" src="../../images/weixin.png" alt="" class="lianxi" />
+        <p>鼓励我</p>
+        <image bindtap="savePay" src="../../images/guli.png" alt="" class="guli" />
+    </view>
+</view>

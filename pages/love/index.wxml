@@ -1,0 +1,30 @@
+<image clss="loveBackground" src="../../images/love_bg.png" style="width:100%;height:100%"></image>
+<canvas canvasId="love_heart" class="love_heart" type="2d"></canvas>
+<view class="words_super_parent_container">
+    <view class="words_parent_container">
+        <view class="words_container">
+            <view class="words">
+                <view animation="{{animationData}}" style="opacity: 0;">
+          {{loveWords}}
+          <view class=" lovetime flex padding justify-end ">
+                        <view class="digit ">{{loveTime.days}}</view>天
+            <view class="digit ">{{loveTime.hours}}</view>时
+            <view class="digit ">{{loveTime.minutes}}</view>分
+            <view class="digit ">{{loveTime.seconds}}</view>秒
+          </view>
+                </view>
+            </view>
+            <image animation="{{animationData}}" class="cu-avatar lg lovehead {{loveHeadAnimation==true?'animate-rotate':''}}" mode="aspectFill" src="{{loveHeadUrl}}" style="opacity: 0;" wx:if="{{loveHeadUrl}}"></image>
+        </view>
+    </view>
+</view>
+<image class="love_and_kiss" src="https://www.gaocaipeng.com/love/fen-biubiu.gif"></image>
+<!-- <image class="celebration_superclean" src="https://www.gaocaipeng.com/love/fen-zhizunbao.gif"></image> -->
+<view bindtap="audioPlay" class="bg_music" style="top:calc({{musicTop}}px - 30rpx); left:{{musicLeft}}px" wx:if="{{isPlay}}">
+    <image class="musicImg music_icon" src="../../images/music_icon.png"></image>
+    <image class="music_play pauseImg" src="../../images/music_play.png"></image>
+</view>
+<view bindtap="audioPlay" class="bg_music" style="top:calc({{musicTop}}px - 30rpx); left:{{musicLeft}}px" wx:else>
+    <image class="musicImg" src="../../images/music_icon.png"></image>
+    <image class="music_play playImg" src="../../images/music_play.png"></image>
+</view>
