@@ -2,6 +2,8 @@
 
 > 高彩鹏
 
+![Image text](https://www.gaocaipeng.com/love/weixin-xiao.jpg)
+
 ## Build Setup
 
 ``` bash
